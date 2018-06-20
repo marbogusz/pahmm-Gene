@@ -1,0 +1,8 @@
+# paHMM-Gene
+paHMM-Gene - pairwise indel rate and dN/dS  estimation using pair hidden Markov models
+
+The code is available on GitHub repository and accessible using the link above. The sources come with an Eclipse CDT project and a Makefile. The makefile should be good for most of the modern x86-based architectures. If your system does not support SSE2, change the compiler flags.
+
+Documentation and Binaries
+
+Check the project website at pahmm-gene.tk for the latest documentation and binaries 
