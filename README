@@ -1,21 +1,26 @@
 # paHMM-Gene
 paHMM-Gene - pairwise indel rate and dN/dS  estimation using pair hidden Markov models
 
-The sources come with an Eclipse CDT project and a Makefile. The makefile should be good for most of the modern x86-based architectures. If your system does not support SSE2, change the compiler flags.
+The sources come with an Eclipse CDT project and a Makefile. The makefile should be good for most of the modern 
+x86-based architectures. If your system does not support SSE2, change the compiler flags.
 
 # Documentation 
 
-paHMM-Gene is very easy to use. In most cases all you need is to execute the binary and point it to the FASTA file with your sequences 
+paHMM-Gene is very easy to use. In most cases all you need is to execute the binary and point it to a 
+FASTA file with your sequences 
 
 # Input 
 
-A FASTA file with the sequences. PaHMM-Gene processes the sequences in a pairwise manner. If your input contains more than 2 sequences, PaHMM-gene will make pairs out of these sequences. For example for 4 sequences there are 6 possible pair combinations.
+A FASTA file with the sequences. PaHMM-Gene processes the sequences in a pairwise manner. 
+If your input contains more than 2 sequences, PaHMM-gene will make pairs out of these sequences. For example for 4 sequences there are 6 possible pair combinations.
 
 # Output
 
 PaHMM-gene outputs the following directly into the console (just like Maffty for example):
 
-Model parameters - kappa (transition to transversion rate ratio), dN/dS (omega), indel rate (lambda, relative to substitution rate), indel length distribution parameter (epsilon), divergence time (expected number of substitutions per codon), sequence 1 name, sequence 2 name, index of a pair.
+Model parameters - kappa (transition to transversion rate ratio), dN/dS (omega), 
+indel rate (lambda, relative to substitution rate), indel length distribution parameter (epsilon), 
+divergence time (expected number of substitutions per codon), sequence 1 name, sequence 2 name, index of a pair.
 
 
 # Example 
@@ -29,7 +34,9 @@ kappa     dn/ds     lambda    epsilon   time      sequence 1          sequence 2
 
 # Getting paHMM-Gene
 
-For best performance we advise to compile paHMM-gene on your computer. Simply download the repository (green clone or download button ->  download zip) unpack and type make in the root folder where the Makefile is. PaHMM-Gene binary will get created. 
+For best performance we advise to compile paHMM-gene on your computer. 
+Simply download the repository (green clone or download button ->  download zip) 
+unpack and type make in the root folder where the Makefile is. PaHMM-Gene binary will get created. 
 
 Alternatively you can download the binaries here:
 
